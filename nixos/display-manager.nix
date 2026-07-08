@@ -8,7 +8,7 @@
       default_session = {
         command = "${pkgs.greetd.tuigreet}/bin/tuigreet \
           --time --time-format '%I:%M %p | %a • %h | %F' \
-          --cmd 'uwsm start hyprland'";
+          --cmd 'uwsm start -e -D Hyprland hyprland.desktop'";
         user    = "greeter";
       };
     };

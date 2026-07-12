@@ -52,11 +52,20 @@ function fish_helix_key_bindings --description 'helix-like key bindings for fish
         echo "Unknown argument $argv" >&2
     end
 
-    # Inherit shared key bindings.
-    # Do this first so helix-bindings win over default.
-    for mode in insert default visual
-        __fish_shared_key_bindings -s -M $mode
+    # Fish 4.8 exposes shared bindings as generated function bodies.
+    function __fish_helix_key_bindings_shared
+        eval "$(__fish_shared_key_bindings)"
     end
+    function __fish_per_os_bind
+        eval "$(__fish_per_os_bind_body)"
+    end
+
+    # Inherit shared key bindings. Do this first so Helix bindings win.
+    for mode in insert default visual
+        __fish_helix_key_bindings_shared -M $mode
+    end
+    functions -e __fish_helix_key_bindings_shared
+    functions -e __fish_per_os_bind
 
     bind -s --preset -M insert \r execute
     bind -s --preset -M insert \n execute

@@ -19,7 +19,8 @@ description: >-
   branch name without creating it.' <commentary>User specifically requested not
   to create the branch, so use the `brancher` agent with the show-only
   option.</commentary></example>
-model: opencode/minimax-m2.1
+model: openai/gpt-5.6-terra
+variant: low
 mode: all
 tools:
   write: false

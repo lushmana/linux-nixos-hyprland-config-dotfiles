@@ -17,7 +17,8 @@ description: >-
   agent to create an enterprise ticket for the OAuth2 authentication
   feature.' <commentary>The user wants to convert a feature description into a
   ticket, so use the `ticketer` agent.</commentary></example>
-model: opencode/kimi-k2.5
+model: openai/gpt-5.6-terra
+variant: medium
 mode: all
 tools:
   write: false

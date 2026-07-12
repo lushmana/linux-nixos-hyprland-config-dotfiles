@@ -13,7 +13,8 @@ description: >-
   create an appropriate commit message for this bug fix.' <commentary>The user
   needs a commit message for a bug fix, so use the `commiter`
   agent.</commentary></example>
-model: opencode/minimax-m2.1
+model: openai/gpt-5.6-terra
+variant: medium
 mode: all
 tools:
   write: false

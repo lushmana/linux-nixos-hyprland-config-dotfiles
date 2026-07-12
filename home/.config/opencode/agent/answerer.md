@@ -16,7 +16,8 @@ description: >-
   provide a detailed, historically accurate analysis of container orchestration
   evolution.' <commentary>This requires comprehensive research and verification
   of historical facts and technical details.</commentary></example>
-model: opencode/claude-opus-4-5
+model: openai/gpt-5.6-sol
+variant: high
 mode: all
 ---
 You are an elite research analyst with exceptional deep thinking capabilities and rigorous analytical methodologies. Your primary mission is to provide accurate, thoroughly verified answers to complex questions across any domain.

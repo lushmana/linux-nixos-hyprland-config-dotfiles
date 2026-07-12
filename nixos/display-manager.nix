@@ -6,9 +6,7 @@
     enable = true;
     settings = {
       default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet \
-          --time --time-format '%I:%M %p | %a • %h | %F' \
-          --cmd 'uwsm start -e -D Hyprland hyprland.desktop'";
+        command = "${pkgs.tuigreet}/bin/tuigreet --time --time-format '%I:%M %p | %a • %h | %F' --cmd '${pkgs.uwsm}/bin/uwsm start -e -D Hyprland hyprland.desktop'";
         user    = "greeter";
       };
     };

@@ -1,6 +1,6 @@
 ---
 description: Converts requirements or repository context into self-contained, business-oriented engineering tickets.
-model: openai/gpt-5.6-terra
+model: openai/gpt-5.6-luna
 variant: medium
 mode: all
 permission:

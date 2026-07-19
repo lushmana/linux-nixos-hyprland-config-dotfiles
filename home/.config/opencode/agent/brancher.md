@@ -1,6 +1,6 @@
 ---
 description: Creates or previews concise conventional Git branch names from staged changes and user context.
-model: openai/gpt-5.6-terra
+model: openai/gpt-5.6-luna
 variant: low
 mode: all
 permission:

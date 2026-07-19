@@ -1,6 +1,6 @@
 ---
 description: Generates Conventional Commit messages and commits staged changes without staging files.
-model: openai/gpt-5.6-terra
+model: openai/gpt-5.6-luna
 variant: medium
 mode: all
 permission:

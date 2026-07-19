@@ -1,6 +1,6 @@
 ---
 description: Improves grammar, clarity, phrasing, and language usage while preserving the author's intent.
-model: openai/gpt-5.6-terra
+model: openai/gpt-5.6-luna
 variant: low
 mode: all
 permission:

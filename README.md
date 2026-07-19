@@ -18,6 +18,7 @@
 - [Showcase](#-showcase)
 - [Components](#-components)
 - [Features](#-features)
+- [Tailscale](#-tailscale)
 - [Installation](#-installation)
 - [Keybindings](#️-keybindings)
 - [Useful aliases in Fish Shell](#-useful-aliases-in-fish-shell)
@@ -99,6 +100,7 @@ You have the flexibility to customize these configurations according to your nee
 | Graphical Boot        | Plymouth + Catppuccin-plymouth |
 | Display Manager       | Greetd + Tuigreet           |
 | Containerization      | Podman                      |
+| Mesh VPN              | Tailscale                   |
 
 And many other useful utilities. The full list can be found in the system configuration files at `nixos` directory.
 
@@ -111,6 +113,17 @@ And many other useful utilities. The full list can be found in the system config
 - ✅ **Complete**: This system is equipped with a wide range of components and utilities, akin to the completeness of operating systems like MacOS or Windows.
 
 - 🎨 **Customizable**: Leveraging the power of Linux and Hyprland, this configuration offers extensive customization options, allowing you to tailor your setup to your preferences.
+
+## 🔗 Tailscale
+
+Tailscale is enabled through `nixos/vpn.nix`, with the `tailscale` CLI installed. Routing features are disabled, and the configured Tailscale UDP port is allowed through the firewall.
+
+After rebuilding the system, authenticate the machine and verify its connection:
+
+```fish
+sudo tailscale up
+tailscale status
+```
 
 ## 🚀 Installation
 
